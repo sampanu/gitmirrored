@@ -3,6 +3,9 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+variables:
+- group: GitMirror
+
 trigger:
 - master
 
@@ -24,4 +27,4 @@ steps:
     sourceGitRepositoryUri: 'https://dev.azure.com/vssam1/_git/GitMirror'
     sourceVerifySSLCertificate: false
     destinationGitRepositoryUri: 'https://github.com/sampanu/gitmirrored.git'
-    destinationGitRepositoryPersonalAccessToken: 'a*token*'
+    destinationGitRepositoryPersonalAccessToken: '$(pat)'
