@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 variables:
-- group: GitMirror
+- group: GitMirrorLib
 
 trigger:
 - master
