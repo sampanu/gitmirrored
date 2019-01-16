@@ -1,4 +1,5 @@
 {
     "key"   : "a_key",
-    "value" : "a_value"
+    "value" : "a_value",
+    "item"  : ";PASSWORD=1234"
 }
