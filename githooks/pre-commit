@@ -1,0 +1,6 @@
+#!/bin/sh
+#!C:/Program\ Files/Git/usr/bin/sh.exe
+# (pre-commit)
+# Fail if any matching words are present in the diff
+
+powershell -noprofile -executionpolicy unrestricted -file C:\\Users\\DC_Sam\\.githooks/PreCommit.ps1
