@@ -2,5 +2,6 @@
     "key"   : "a_key",
     "value" : "a_value",
     "item"  : ";PASSWORD=1234",
-     "item1"  : ";PASSWORD=1234"
+     "item1"  : ";PASSWORD=1234",
+      "item2"  : ";PASSWORD=1234"
 }
