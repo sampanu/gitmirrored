@@ -21,7 +21,7 @@ param (
 [String]$task = "Pre-Commit"
 
 Write-host "PreCommit"
-write-host (Split-Path $MyInvocation.MyCommand.Path)
+write-host (Split-Path $MyInvocation.MyCommand.Path -parent)
 
 Write-Host "Exec path : $($executingPath) " 
 
