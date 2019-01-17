@@ -21,11 +21,12 @@ param (
 [String]$task = "Pre-Commit"
 
 Write-host "PreCommit"
-write-host (Split-Path $MyInvocation.MyCommand.Path -parent)
+$parentPath = Split-Path $MyInvocation.MyCommand.Path -parent
 
 Write-Host "Exec path : $($executingPath) " 
 
 if ([string]::IsNullOrEmpty($basePath)) {
+    $basePath = $parentPath
     # Git command to find files that are added or modified
     [String]$files = git diff --staged --name-only --diff-filter=AM
     if ([string]::IsNullOrEmpty($files)) {
