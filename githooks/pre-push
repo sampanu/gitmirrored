@@ -2,5 +2,4 @@
 #!C:/Program\ Files/Git/usr/bin/sh.exe
 # (pre-push)
 # Fail if any matching words are present in the diff
-
-powershell -noprofile -executionpolicy unrestricted -file C:\\Users\\DC_Sam\\.githooks/prepush.ps1
+powershell -noprofile -executionpolicy unrestricted -file .git/hooks/prepush.ps1
