@@ -20,8 +20,7 @@ param (
 [String[]]$filesArr
 [String]$task = "Pre-Commit"
 
-$Invocation = (Get-Variable MyInvocation -Scope 1).Value
-$executingPath = Split-Path $Invocation.MyCommand.Path
+$executingPath =  write-host (Split-Path $MyInvocation.MyCommand.Path)
 
 Write-Host "Exec path : $($executingPath) " 
 
