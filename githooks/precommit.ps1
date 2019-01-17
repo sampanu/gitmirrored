@@ -23,6 +23,8 @@ param (
 Write-host "PreCommit"
 $parentPath = Split-Path $MyInvocation.MyCommand.Path -parent
 
+Write-host $parentPath
+
 Write-Host "Exec path : $($executingPath) " 
 if ([string]::IsNullOrEmpty($basePath)) {
     $basePath = $parentPath
