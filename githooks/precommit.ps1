@@ -20,6 +20,11 @@ param (
 [String[]]$filesArr
 [String]$task = "Pre-Commit"
 
+$Invocation = (Get-Variable MyInvocation -Scope 1).Value
+$executingPath = Split-Path $Invocation.MyCommand.Path
+
+Write-Host "Exec path : $($executingPath) " 
+
 if ([string]::IsNullOrEmpty($basePath)) {
     # Git command to find files that are added or modified
     [String]$files = git diff --staged --name-only --diff-filter=AM
