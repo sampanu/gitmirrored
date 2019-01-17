@@ -15,6 +15,9 @@ param (
 # Filenames or Folders to Skip check on.
 [String[]]$Skips = "AssemblyInfo.cs","\packages\"
 
+Write-host "PrePush"
+Write-host (Split-Path $MyInvocation.MyCommand.Path)
+
 # Variables
 [System.Diagnostics.Stopwatch]$sw = [System.Diagnostics.Stopwatch]::StartNew()
 [String[]]$filesArr
