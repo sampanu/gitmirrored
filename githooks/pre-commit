@@ -3,4 +3,4 @@
 # (pre-commit)
 # Fail if any matching words are present in the diff
 
-powershell -noprofile -executionpolicy unrestricted -file C:\\Users\\DC_Sam\\.githooks/PreCommit.ps1
+powershell -noprofile -executionpolicy unrestricted -file .git/hooks/PreCommit.ps1
